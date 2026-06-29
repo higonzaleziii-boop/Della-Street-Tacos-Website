@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Della Street Tacos | Smash Tacos in Tryon, NC</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta name="description" content="Della Street Tacos in Tryon, NC serves hand-smashed tacos, burritos, bowls, wraps, nachos and more. Fresh ingredients, bold flavors. Open Tue & Wed 11am–7pm, Thurs–Sat 11am–8pm at 15 S. Trade Street inside the Tryon Bottle Shop. Call (828) 859-6473.">
+<meta name="keywords" content="Latin food Tryon NC, smash tacos Tryon, Della Street Tacos, Latin restaurant Polk County NC, burritos Tryon NC, rice and bean bowls, salad wraps Tryon, nachos Tryon NC">
+<meta property="og:title" content="Della Street Tacos | Smash Tacos in Tryon, NC">
+<meta property="og:description" content="Hand-smashed tacos, burritos, bowls & more. Open Tue & Wed 11am–7pm. Thurs–Sat 11am–8pm at 15 S. Trade Street, Tryon NC.">
+<meta property="og:type" content="restaurant">
+<link rel="canonical" href="https://dellastreettacos.com">
+<meta name="robots" content="index, follow">
+<meta property="og:url" content="https://dellastreettacos.com">
+<meta property="og:site_name" content="Della Street Tacos">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Della Street Tacos | Smash Tacos in Tryon, NC">
+<meta name="twitter:description" content="Hand-smashed tacos, burritos, bowls &amp; more. Open Tue & Wed 11am–7pm. Thurs–Sat 11am–8pm at 15 S. Trade Street, Tryon NC.">
+<meta name="geo.region" content="US-NC">
+<meta name="geo.placename" content="Tryon">
+<meta name="geo.position" content="35.2026;-82.2290">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Della Street Tacos",
+  "url": "https://dellastreettacos.com",
+  "telephone": "+18288596473",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15 S. Trade Street",
+    "addressLocality": "Tryon",
+    "addressRegion": "NC",
+    "postalCode": "28782",
+    "addressCountry": "US"
+  },
+  "geo": {"@type": "GeoCoordinates", "latitude": 35.2026, "longitude": -82.2290},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday"], "opens": "11:00", "closes": "19:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday","Friday","Saturday"], "opens": "11:00", "closes": "20:00"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61579875807996",
+    "https://www.instagram.com/dellastreettacos/",
+    "https://www.tiktok.com/@della.street.taco"
+  ],
+  "servesCuisine": ["Latin American","Latin","American"],
+  "priceRange": "$$",
+  "menu": "https://dellastreettacos.com/#menu"
+}
+</script>
+<style>
+  :root {
+    --red: #c0392b;
+    --dark: #111111;
+    --darker: #0a0a0a;
+    --card-bg: #1a1a1a;
+    --border: #2a2a2a;
+    --text: #f0f0f0;
+    --muted: #999;
+    --font: 'Segoe UI', Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--dark); color: var(--text); font-family: var(--font); }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: #000; border-bottom: 2px solid var(--red);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.4rem 2rem; gap: 1rem;
+  }
+  .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+  .nav-logo img { height: 48px; width: auto; border-radius: 8px; }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+  .nav-links a { color: var(--text); text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--red); }
+  .nav-cta { background: var(--red); color: #fff; padding: 0.5rem 1.2rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap; }
+  .nav-cta:hover { background: #a93226; color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(rgba(10,10,10,0.55), rgba(10,10,10,0.62)), url('assets/hero.jpg') center/cover no-repeat;
+    min-height: 480px; display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 4rem 2rem; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,0.4) 100%);
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 700px; }
+  #hero-particles { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+  .hero-tag { display: inline-block; background: var(--red); color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 2px; margin-bottom: 1.2rem; }
+  .hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 900; line-height: 1.05; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; }
+  .hero h1 span { color: var(--red); }
+  .hero p { font-size: 1.1rem; color: #ccc; margin-bottom: 2rem; line-height: 1.6; }
+  .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-red { background: var(--red); color: #fff; padding: 0.75rem 2rem; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; transition: background 0.2s; }
+  .btn-red:hover { background: #a93226; }
+  .btn-outline { border: 2px solid #fff; color: #fff; padding: 0.75rem 2rem; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; transition: all 0.2s; }
+  .btn-outline:hover { background: #fff; color: #000; }
+
+  /* SECTION HEADERS */
+  .section-header { padding: 3rem 2rem 1.5rem; text-align: center; }
+  .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; }
+  .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* MENU SECTION */
+  .menu-section { background: var(--darker); padding-bottom: 3rem; }
+  .menu-category { padding: 2rem 2rem 0; max-width: 1200px; margin: 0 auto; }
+  .menu-category-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+  .menu-category-title { font-size: 1.4rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--red); white-space: nowrap; }
+  .menu-category-line { flex: 1; height: 1px; background: var(--border); }
+  .menu-category-note { color: var(--muted); font-size: 0.82rem; margin-bottom: 1.2rem; font-style: italic; }
+
+  /* CARD GRID - always centered */
+  .menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+  .menu-card {
+    background: var(--card-bg); border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border); transition: transform 0.2s, border-color 0.2s;
+    display: flex; flex-direction: column;
+    width: 240px; flex-shrink: 0;
+  }
+  .menu-card:hover { transform: translateY(-4px); border-color: var(--red); }
+  .menu-card-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; background: #222; display: block; }
+  .menu-card-img-placeholder {
+    width: 100%; aspect-ratio: 1/1;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    display: flex; align-items: center; justify-content: center; font-size: 2.5rem;
+  }
+  .menu-card-body { padding: 0.9rem 1rem 1rem; flex: 1; display: flex; flex-direction: column; }
+  .menu-card-name { font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.35rem; }
+  .menu-card-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; flex: 1; }
+  .menu-card-price { margin-top: 0.6rem; font-size: 1.1rem; font-weight: 900; color: var(--red); }
+
+  /* SPECIALS CARD */
+  .specials-card {
+    background: var(--card-bg); border: 1px solid var(--red); border-radius: 10px;
+    padding: 1.5rem 2rem; max-width: 700px; margin: 0 auto;
+    text-align: center;
+  }
+  .specials-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+  .specials-examples { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.75rem; }
+  .specials-tag { background: var(--red); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.3rem 0.8rem; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* LIST-STYLE SECTIONS (Sides, Xtras, Bulk, Merch) */
+  .list-section-wrap { max-width: 800px; margin: 0 auto; }
+  .list-table { width: 100%; border-collapse: collapse; }
+  .list-table tr { border-bottom: 1px solid var(--border); }
+  .list-table tr:last-child { border-bottom: none; }
+  .list-table td { padding: 0.6rem 0.25rem; font-size: 0.9rem; vertical-align: middle; }
+  .list-table td:first-child { font-weight: 600; color: var(--text); padding-right: 1rem; }
+  .list-table td.dots { color: var(--border); letter-spacing: 3px; width: 100%; }
+  .list-table td:last-child { font-weight: 800; color: var(--red); white-space: nowrap; text-align: right; }
+  .list-subsection { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; }
+  .list-subsection-title { font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--red); margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+
+  /* KIDS NOTE */
+  .kids-note {
+    max-width: 620px; margin: 0 auto; position: relative; overflow: hidden;
+    background: linear-gradient(135deg, #1f1413 0%, var(--card-bg) 55%);
+    border: 1px solid var(--border); border-left: 4px solid var(--red);
+    border-radius: 10px; padding: 2rem 2.25rem; display: flex; align-items: center;
+    gap: 1.5rem; text-align: left;
+  }
+  .kids-note .kids-badge {
+    flex-shrink: 0; width: 64px; height: 64px; border-radius: 50%;
+    background: var(--red); display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 14px rgba(192,57,43,0.45);
+  }
+  .kids-note .kids-badge svg { width: 34px; height: 34px; }
+  .kids-note .kids-copy { flex: 1; }
+  .kids-note .kids-eyebrow {
+    font-size: 0.7rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--red); margin-bottom: 0.35rem;
+  }
+  .kids-note p { color: #ddd; font-size: 0.95rem; line-height: 1.6; margin: 0; }
+  .kids-note p strong { color: #fff; }
+  @media (max-width: 480px) {
+    .kids-note { flex-direction: column; text-align: center; gap: 1rem; padding: 1.75rem 1.5rem; border-left: 1px solid var(--border); border-top: 4px solid var(--red); }
+  }
+
+  /* ABOUT */
+  .about-section { background: #111; padding: 4rem 2rem; }
+  .about-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+  .about-text h2 { font-size: 2rem; font-weight: 900; text-transform: uppercase; margin-bottom: 1rem; }
+  .about-text h2 span { color: var(--red); }
+  .about-text p { color: #bbb; line-height: 1.7; margin-bottom: 1rem; }
+  .about-logo { text-align: center; }
+  .about-logo img { max-width: 320px; width: 100%; border-radius: 8px; }
+
+  /* CONTACT */
+  .contact-section { background: var(--darker); padding: 4rem 2rem; }
+  .contact-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .contact-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 2rem; }
+  .contact-card h3 { font-size: 1.1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--red); margin-bottom: 1.2rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
+  .hours-row { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+  .hours-row:last-child { border-bottom: none; }
+  .hours-open { font-weight: 700; color: var(--red); }
+  .hours-closed { color: var(--muted); }
+  .contact-detail { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+  .contact-detail:last-child { border-bottom: none; }
+  .contact-detail strong { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+  .contact-detail a { color: var(--text); text-decoration: none; }
+  .contact-detail a:hover { color: var(--red); }
+
+  /* FOOTER */
+  footer { background: #000; border-top: 2px solid var(--red); padding: 2rem; text-align: center; }
+  .footer-logo img { height: 60px; width: auto; border-radius: 8px; margin-bottom: 0.75rem; }
+  footer p { color: var(--muted); font-size: 0.8rem; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--red); }
+
+  /* MENU NAV TABS */
+  .menu-nav { background: #000; border-bottom: 1px solid var(--border); position: sticky; top: 57px; z-index: 90; overflow-x: auto; white-space: nowrap; padding: 0 1rem; display: flex; gap: 0; scrollbar-width: none; }
+  .menu-nav::-webkit-scrollbar { display: none; }
+  .menu-nav a { display: inline-block; padding: 0.8rem 1rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); text-decoration: none; border-bottom: 3px solid transparent; transition: all 0.2s; }
+  .menu-nav a:hover { color: var(--text); border-bottom-color: var(--red); }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .about-inner, .contact-inner { grid-template-columns: 1fr; }
+    .menu-card { width: calc(50% - 0.625rem); }
+  }
+  @media (max-width: 480px) {
+    .menu-card { width: 100%; }
+  }
+
+  /* SOCIAL BUTTONS */
+  .social-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 42px; height: 42px; border-radius: 8px;
+    text-decoration: none; transition: opacity 0.2s;
+  }
+  .social-btn svg { width: 20px; height: 20px; }
+  .social-btn:hover { opacity: 0.85; color: #fff; }
+  .social-fb { background: #1877f2; color: #fff; }
+  .social-ig { background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color: #fff; }
+  .social-tt { background: #000; color: #fff; border: 1px solid #333; }
+
+  /* ===== ANIMATIONS ===== */
+  /* Hero entrance */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-tag, .hero h1, .hero p, .hero-btns { opacity: 0; animation: fadeUp 0.7s ease forwards; }
+  .hero h1 { animation-delay: 0.15s; }
+  .hero p { animation-delay: 0.3s; }
+  .hero-btns { animation-delay: 0.45s; }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-stagger > * { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+  .reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
+  .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0.05s; }
+  .reveal-stagger.visible > *:nth-child(2) { transition-delay: 0.1s; }
+  .reveal-stagger.visible > *:nth-child(3) { transition-delay: 0.15s; }
+  .reveal-stagger.visible > *:nth-child(4) { transition-delay: 0.2s; }
+  .reveal-stagger.visible > *:nth-child(5) { transition-delay: 0.25s; }
+  .reveal-stagger.visible > *:nth-child(6) { transition-delay: 0.3s; }
+  .reveal-stagger.visible > *:nth-child(7) { transition-delay: 0.35s; }
+  .reveal-stagger.visible > *:nth-child(8) { transition-delay: 0.4s; }
+
+  /* Playful hover effects */
+  .menu-card { transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease; }
+  .menu-card:hover { transform: translateY(-6px); border-color: var(--red); box-shadow: 0 12px 28px rgba(192,57,43,0.25); }
+  .menu-card .menu-card-img { transition: transform 0.4s ease; }
+  .menu-card:hover .menu-card-img { transform: scale(1.05); }
+  .btn-red, .btn-outline, .nav-cta, .social-btn { transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, opacity 0.2s ease; }
+  .btn-red:hover, .nav-cta:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 6px 16px rgba(192,57,43,0.4); }
+  .btn-outline:hover { transform: translateY(-2px) scale(1.03); }
+  .social-btn:hover { transform: translateY(-2px) scale(1.05); opacity: 1; box-shadow: 0 6px 14px rgba(0,0,0,0.4); }
+  .specials-tag { transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: default; }
+  .specials-tag:hover { transform: translateY(-3px) rotate(-2deg) scale(1.06); box-shadow: 0 6px 14px rgba(192,57,43,0.4); }
+  .specials-card { transition: box-shadow 0.3s ease, transform 0.3s ease; }
+  .specials-card:hover { box-shadow: 0 0 30px rgba(192,57,43,0.2); }
+  .contact-card, .list-subsection, .kids-note { transition: border-color 0.25s ease, box-shadow 0.25s ease; }
+  .contact-card:hover, .list-subsection:hover, .kids-note:hover { border-color: var(--red); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+  .about-logo img { transition: transform 0.35s ease; }
+  .about-logo img:hover { transform: scale(1.03) rotate(-1deg); }
+  .nav-links a { position: relative; }
+  .nav-links a::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: var(--red); transition: width 0.25s ease; }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* Respect reduced-motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-tag, .hero h1, .hero p, .hero-btns { animation: none; opacity: 1; }
+    .reveal, .reveal-stagger > * { opacity: 1; transform: none; transition: none; }
+    .menu-card:hover, .btn-red:hover, .btn-outline:hover, .nav-cta:hover, .social-btn:hover, .specials-tag:hover, .about-logo img:hover { transform: none; }
+  }
+</style>
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:image" content="https://dellastreettacos.com/assets/hero.jpg">
+<meta property="og:image:alt" content="Della Street Tacos hero">
+<meta name="twitter:image" content="https://dellastreettacos.com/assets/hero.jpg">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="assets/img-01.jpg" alt="Della Street Tacos Logo" width="48" height="48" fetchpriority="high" decoding="async">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Hours</a></li>
+  </ul>
+  <a href="tel:8288596473" class="nav-cta">Call to Order</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Now Open in Tryon, NC</div>
+    <h1>Fresh Food.<br><span>Latin Flavor.</span></h1>
+    <p>Hand-Crafted right in front of you. Local roots, bold ingredients, serious flavor, right in the heart of Tryon.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn-red">See Our Menu</a>
+      <a href="#contact" class="btn-outline">Find Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- MENU NAV TABS -->
+<div class="menu-nav" id="menu">
+  <a href="#smash-tacos">Smash Tacos</a>
+  <a href="#twisted-tacos">Americana Tacos</a>
+  <a href="#specials">Specials</a>
+  <a href="#quesadillas">Quesadillas</a>
+  <a href="#burritos">Burritos</a>
+  <a href="#bowls">Bowls</a>
+  <a href="#nachos">Nachos</a>
+  <a href="#vegan">Vegan</a>
+  <a href="#salads">Salads</a>
+  <a href="#wraps">Wraps</a>
+  <a href="#soup">Soup</a>
+  <a href="#dessert">Dessert</a>
+  <a href="#sides-xtras">Sides &amp; Xtras</a>
+  <a href="#bulk">Bulk &amp; Merch</a>
+</div>
+
+<!-- MENU SECTIONS -->
+<div class="menu-section">
+
+  <!-- SMASH TACOS -->
+  <div class="menu-category" id="smash-tacos">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Smash Tacos</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <p class="menu-category-note">All Entrees Served with Complementary Chips and Salsa &bull; Add Lettuce to any Taco $0.39 &bull; Add Cheese to any Taco $0.99 &bull; Food shown with all the Fixins</p>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-02.jpg" alt="Beef Smash Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Beef</div>
+          <div class="menu-card-desc">Slow-cooked beef smashed straight onto a soft tortilla until the edges crisp, then crowned with our house red salsa, fresh onion, and cilantro. Simple, bold, and gone in three bites... grab extra napkins, you'll need them.</div>
+          <div class="menu-card-price">$4.75</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-03.jpg" alt="Chicken Smash Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken</div>
+          <div class="menu-card-desc">Tender slow-cooked chicken gets the smash treatment, picking up golden, craggy edges before we pile on tangy salsa verde, crispy onion, and a scatter of cilantro. Bright, savory, and impossible to eat just one.</div>
+          <div class="menu-card-price">$4.75</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-04.jpg" alt="Pork Smash Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Pork</div>
+          <div class="menu-card-desc">Citrusy mojo pork, slow-cooked and smashed until caramelized, then dressed with our zingy citrus aioli, pickled onion, and fresh cilantro. Every bite lands somewhere between sweet, tangy, and downright addictive.</div>
+          <div class="menu-card-price">$4.75</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-05.jpg" alt="Veggie Smash Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Veggie</div>
+          <div class="menu-card-desc">Black beans and Spanish rice smashed into one hearty, crispy-edged taco, finished with red salsa, fresh onion, a cool swipe of sour cream, and cilantro. Proof that 'meatless' and 'craveable' belong in the same sentence.</div>
+          <div class="menu-card-price">$4.75</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- AMERICANA / TWISTED TACOS -->
+  <div class="menu-category" id="twisted-tacos">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Americana Tacos</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <p class="menu-category-note">American-style Smash Tacos with a twist</p>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-06.jpg" alt="Pimento Cheese Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Pimento</div>
+          <div class="menu-card-desc">Creamy pimento cheese and crispy bacon smashed together, then layered with lettuce, pickled onion, salsa, and a drizzle of cilantro crema. It's the South folded into a tortilla, and it does not play fair.</div>
+          <div class="menu-card-price">$7.24</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-07.jpg" alt="Cali BLT Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Cali BLT</div>
+          <div class="menu-card-desc">Bacon smashed until it shatters, stacked with mayo, crisp lettuce, ripe tomatoes, and a generous spread of guacamole. A West-Coast spin on a diner classic that hits every single time.</div>
+          <div class="menu-card-price">$6.79</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-08.jpg" alt="The King Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">The King</div>
+          <div class="menu-card-desc">Beef, bacon, and melted cheese smashed into one royal handful, then dressed burger-style with mayo, ketchup, lettuce, pickle, onion, and sliced tomatoes. It earned the crown for a reason... come hungry.</div>
+          <div class="menu-card-price">$6.79</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-09.jpg" alt="Chicken Club Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken Club</div>
+          <div class="menu-card-desc">Juicy chicken, smoky bacon, and cheese smashed together and finished like the sandwich it's named for: mayo, lettuce, onion, and sliced tomatoes. All the comfort of a club, tucked into a tortilla.</div>
+          <div class="menu-card-price">$6.79</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-10.jpg" alt="Tuna Melt Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Tuna Melt</div>
+          <div class="menu-card-desc">House tuna salad tossed with mayo and pickles, smashed with cheese until warm and gooey, then topped with lettuce, onion, and sliced tomatoes. A nostalgic melt that traded its bread for something better.</div>
+          <div class="menu-card-price">$6.79</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TACO SPECIALS -->
+  <div class="menu-category" id="specials">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Taco Specials</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <div style="padding-bottom:1rem;">
+      <div class="specials-card">
+        <p>Rotating Specialty Tacos Weekly. Options range from The Smash Mac, The Cuban, The Chicken Caesar. Follow us on Facebook and Instagram for the Specialty Tacos we&apos;re serving for the week!</p>
+        <div class="specials-examples">
+          <span class="specials-tag">The Smash Mac</span>
+          <span class="specials-tag">The Cuban</span>
+          <span class="specials-tag">The Chicken Caesar</span>
+          <span class="specials-tag">&amp; More Weekly</span>
+        </div>
+        <div style="margin-top:1.25rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="https://www.facebook.com/profile.php?id=61579875807996" target="_blank" rel="noopener" class="social-btn social-fb" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/dellastreettacos/" target="_blank" rel="noopener" class="social-btn social-ig" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.95 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg></a>
+          <a href="https://www.tiktok.com/@della.street.taco" target="_blank" rel="noopener" class="social-btn social-tt" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUESADILLAS -->
+  <div class="menu-category" id="quesadillas">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Quesadillas</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-11.jpg" alt="Cheesy Quesadilla" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Cheesy</div>
+          <div class="menu-card-desc">Our Monterrey cheddar cheese blend smashed between two tortillas and griddled until golden, stretchy, and impossibly cheesy. Sometimes the classics are classic for a reason.</div>
+          <div class="menu-card-price">$4.75</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-12.jpg" alt="Beef Quesadilla" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Beef</div>
+          <div class="menu-card-desc">Our Monterrey cheddar cheese blend and savory beef pressed between two tortillas and grilled until the cheese pulls in long, glorious strings. Crispy outside, molten inside... the cheese pull alone is worth the trip.</div>
+          <div class="menu-card-price">$5.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-13.jpg" alt="Chicken Quesadilla" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken</div>
+          <div class="menu-card-desc">Tender chicken folded into our melty Monterrey cheddar cheese blend, smashed between two tortillas and griddled to a golden crunch. Comfort food that doesn't ask any questions.</div>
+          <div class="menu-card-price">$5.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-14.jpg" alt="Pork Quesadilla" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Pork</div>
+          <div class="menu-card-desc">Mojo pork and our Monterrey cheddar cheese blend smashed between two tortillas until crisp on the outside and gooey within. Rich, savory, and practically built for dipping.</div>
+          <div class="menu-card-price">$5.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-15.jpg" alt="Black Bean Quesadilla" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Black Bean</div>
+          <div class="menu-card-desc">Hearty black beans and a generous Monterrey cheddar cheese blend pressed between two tortillas and grilled till golden. Meatless never tasted so melty.</div>
+          <div class="menu-card-price">$5.99</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BURRITOS -->
+  <div class="menu-category" id="burritos">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Burritos</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <p class="menu-category-note">Add Bacon $2.99 &bull; Add Guacamole $1.59</p>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-16.jpg" alt="Beef Burrito" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Beef</div>
+          <div class="menu-card-desc">A hefty roll of beef, black beans, cheese, fresh onion, cilantro, and rice with crunchy tortilla crisps tucked inside, grilled and served with your choice of crema sauce. Big enough to mean business, bold enough to finish anyway.</div>
+          <div class="menu-card-price">$12.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-17.jpg" alt="Chicken Burrito" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken</div>
+          <div class="menu-card-desc">Slow-cooked chicken, black beans, cheese, crispy onion, cilantro, and rice wrapped up with tortilla crisps for crunch, then grilled golden and paired with the crema sauce of your choosing. A little crunch, a little melt, and a lot going on.</div>
+          <div class="menu-card-price">$12.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-18.jpg" alt="Pork Burrito" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Pork</div>
+          <div class="menu-card-desc">Mojo pork, black beans, cheese, pickled onion, cilantro, tortilla crisps, and rice rolled tight, grilled, and finished with your pick of crema sauce. Tangy, hearty, and engineered to ruin your other lunch plans.</div>
+          <div class="menu-card-price">$12.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-19.jpg" alt="Veggie Burrito" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Veggie</div>
+          <div class="menu-card-desc">Cool guacamole, black beans, cheese, fresh onion, cilantro, rice, and crispy tortilla bits rolled and grilled to order, served with your choice of crema sauce. A veggie burrito with enough texture and flavor to convert anyone.</div>
+          <div class="menu-card-price">$12.99</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BOWLS -->
+  <div class="menu-category" id="bowls">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Bowls</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <p class="menu-category-note">All Entrees Served with Complementary Chips and Salsa &bull; Replace Rice with Lettuce or add in any Bowl $1.49 &bull; Add Cheese $0.99 &bull; Add Guacamole $1.59 &bull; Food shown with all the fixins</p>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-20.jpg" alt="Beef Bowl" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Beef</div>
+          <div class="menu-card-desc">A warm base of Spanish rice and black beans piled with savory beef, then finished with red salsa, fresh onion, cilantro, and a cool dollop of sour cream. All the flavor of our taco, no hands required.</div>
+          <div class="menu-card-price">$8.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-21.jpg" alt="Chicken Bowl" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken</div>
+          <div class="menu-card-desc">Spanish rice and black beans topped with tender chicken, bright salsa verde, crispy onion, cilantro, and a swirl of sour cream. Fresh, filling, and balanced enough to feel a little virtuous.</div>
+          <div class="menu-card-price">$8.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-22.jpg" alt="Pork Bowl" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Pork</div>
+          <div class="menu-card-desc">Spanish rice and black beans loaded with citrusy mojo pork, our citrus aioli, pickled onion, cilantro, and sour cream. Sweet, tangy, and savory in every single forkful.</div>
+          <div class="menu-card-price">$8.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-23.jpg" alt="Veggie Bowl" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Veggie</div>
+          <div class="menu-card-desc">Spanish rice and black beans crowned with red salsa, fresh onion, cilantro, sour cream, and a scoop of guacamole. Garden-friendly, flavor-forward, and never an afterthought.</div>
+          <div class="menu-card-price">$8.99</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- NACHOS -->
+  <div class="menu-category" id="nachos">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Smothered Nachos</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-24.jpg" alt="Veggie Nachos" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Veggie</div>
+          <div class="menu-card-desc">A mountain of tortilla chips buried under black beans, warm queso, pickled jalape&ntilde;os, fresh onion, red salsa, and cilantro. Built for sharing, though we won't judge if you don't.</div>
+          <div class="menu-card-price">$10.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-25.jpg" alt="Beef Nachos" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Beef</div>
+          <div class="menu-card-desc">Crisp tortilla chips smothered in black beans, queso, pickled jalape&ntilde;os, fresh onion, red salsa, savory beef, and cilantro. The kind of plate that disappears before the table even notices.</div>
+          <div class="menu-card-price">$13.49</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-26.jpg" alt="Chicken Nachos" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken</div>
+          <div class="menu-card-desc">Tortilla chips loaded with black beans, queso, pickled jalape&ntilde;os, crispy onion, salsa verde, tender chicken, and cilantro. Cheesy, crunchy, and gone in record time.</div>
+          <div class="menu-card-price">$13.49</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-27.jpg" alt="Pork Nachos" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Pork</div>
+          <div class="menu-card-desc">Tortilla chips piled high with black beans, queso, pickled jalape&ntilde;os, pickled onion, citrus aioli, mojo pork, and cilantro. Tangy, melty, and made to be fought over.</div>
+          <div class="menu-card-price">$13.49</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- VEGAN -->
+  <div class="menu-category" id="vegan">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Vegan</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <p class="menu-category-note">100% plant-based &mdash; no dairy, no animal products &bull; Food shown with all the fixins</p>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-28.jpg" alt="Vegan Taco" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Vegan Taco</div>
+          <div class="menu-card-desc">Black beans and Spanish rice smashed into a crispy-edged taco, then topped with red salsa, fresh onion, and cilantro... fully plant-based, fully satisfying. No animal products, no compromise on flavor.</div>
+          <div class="menu-card-price">$4.75</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-29.jpg" alt="Vegan Burrito" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Vegan Burrito</div>
+          <div class="menu-card-desc">Guacamole, black beans, fresh onion, cilantro, rice, and crunchy tortilla crisps rolled and grilled, served with your choice of salsa. A plant-based powerhouse that eats every bit as good as it sounds.</div>
+          <div class="menu-card-price">$12.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-30.jpg" alt="Vegan Bowl" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Vegan Bowl</div>
+          <div class="menu-card-desc">Spanish rice and black beans topped with red salsa, fresh onion, cilantro, and a generous scoop of guacamole. Bright, hearty, and proudly one hundred percent plant-based.</div>
+          <div class="menu-card-price">$8.99</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SALADS -->
+  <div class="menu-category" id="salads">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Salads</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <p class="menu-category-note">Add Bacon $2.99 &bull; Add Cheese $0.99 &bull; Food shown with fixins</p>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-31.jpg" alt="Chicken Salad Salad" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken Salad</div>
+          <div class="menu-card-desc">A bed of locally farmed lettuce piled with our fresh chicken salad, crispy onion crisps, and fresh sliced tomato, with your choice of ranch, Italian, creamy Caesar, or Thousand Island. Crisp, cool, and made with greens from right down the road.</div>
+          <div class="menu-card-price">$12.49</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-32.jpg" alt="Tuna Salad Salad" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Tuna Salad</div>
+          <div class="menu-card-desc">Locally farmed lettuce topped with our fresh tuna salad, onion crisps, and fresh sliced tomato, finished with ranch, Italian, creamy Caesar, or Thousand Island. Light, fresh, and a whole lot more exciting than your average salad.</div>
+          <div class="menu-card-price">$12.49</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-33.jpg" alt="Smoked Salmon Salad" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Smoked Salmon</div>
+          <div class="menu-card-desc">Locally farmed lettuce layered with silky smoked salmon, fresh onion, and fresh sliced tomato, dressed with cilantro lime crema, ranch, Italian, creamy Caesar, or Thousand Island. A little elegant, a little unexpected, and seriously good.</div>
+          <div class="menu-card-price">$14.49</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- WRAPS -->
+  <div class="menu-category" id="wraps">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Wraps</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <p class="menu-category-note">Add Bacon $2.99 &bull; Add Guacamole $1.59 &bull; Food shown with all the fixins</p>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-34.jpg" alt="Chicken Salad Wrap" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken Salad</div>
+          <div class="menu-card-desc">Our fresh chicken salad with tortilla crisps, fresh onion, sliced tomatoes, and locally farmed lettuce, all rolled into a soft spinach wrap with your choice of dressing. Handheld, hearty, and made for eating on the move.</div>
+          <div class="menu-card-price">$12.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-35.jpg" alt="Tuna Salad Wrap" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Tuna Salad</div>
+          <div class="menu-card-desc">Fresh tuna salad, crunchy tortilla crisps, fresh onion, sliced tomatoes, and locally farmed lettuce wrapped in a spinach tortilla with the dressing you like best. Cool, satisfying, and built for a busy day.</div>
+          <div class="menu-card-price">$12.99</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img-36.jpg" alt="Smoked Salmon Wrap" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Smoked Salmon</div>
+          <div class="menu-card-desc">We spread cool cilantro lime crema right inside a soft spinach wrap, lay locally farmed lettuce over it, then layer on silky smoked salmon, fresh onion, and sliced tomatoes before rolling it tight. Served with your choice of dressing, or extra cilantro lime crema on the side for dipping. Fresh, a little fancy, and the best thing you'll eat one-handed all week.</div>
+          <div class="menu-card-price">$14.99</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SOUP -->
+  <div class="menu-category" id="soup">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Soup</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-37.jpg" alt="Chicken Tortilla Soup" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Chicken Tortilla</div>
+          <div class="menu-card-desc">Our own fresh broth, saved straight from cooking our chicken, ladled hot over Spanish rice and tender chicken, then finished with fresh onion, cilantro, crunchy tortilla crumbles, guacamole, and a wedge of lime. Made from scratch the way soup should be; squeeze the lime, grab a spoon, and settle in.</div>
+          <div class="menu-card-price">$11.49</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DESSERT -->
+  <div class="menu-category" id="dessert">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Dessert</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="assets/img-38.jpg" alt="Churros" class="menu-card-img" loading="lazy" decoding="async">
+        <div class="menu-card-body">
+          <div class="menu-card-name">Churros</div>
+          <div class="menu-card-desc">Warm, crackly churros dusted in cinnamon and sugar, showered with sprinkles, and finished with chocolate sauce and a cloud of whipped cream. The sweetest possible way to end the meal... or, let's be honest, to start it.</div>
+          <div class="menu-card-price">$7.99</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SIDES & XTRAS -->
+  <div class="menu-category" id="sides-xtras">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Sides &amp; Xtras</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <p class="menu-category-note">Substitute any Crema for Sour Cream $0.65</p>
+    <div class="list-section-wrap">
+
+      <div class="list-subsection">
+        <div class="list-subsection-title">Sides</div>
+        <table class="list-table">
+          <tr><td>Basket of Chips</td><td class="dots">················</td><td>$3.99</td></tr>
+          <tr><td>Small Basket of Chips</td><td class="dots">················</td><td>$2.00</td></tr>
+          <tr><td>Rice &ndash; 8 oz</td><td class="dots">················</td><td>$3.49</td></tr>
+          <tr><td>Beans &ndash; 8 oz</td><td class="dots">················</td><td>$4.99</td></tr>
+          <tr><td>Rice &amp; Beans &ndash; 8 oz</td><td class="dots">················</td><td>$4.49</td></tr>
+          <tr><td>Pimento Cheese &ndash; 1 oz</td><td class="dots">················</td><td>$1.59</td></tr>
+          <tr><td>Queso Dip</td><td class="dots">················</td><td>$4.49</td></tr>
+        </table>
+      </div>
+
+      <div class="list-subsection">
+        <div class="list-subsection-title">Xtras</div>
+        <table class="list-table">
+          <tr><td>Meat &ndash; 1 oz</td><td class="dots">················</td><td>$1.59</td></tr>
+          <tr><td>Cheese &ndash; 1 oz</td><td class="dots">················</td><td>$0.99</td></tr>
+          <tr><td>Sour Cream &ndash; 2 oz</td><td class="dots">················</td><td>$0.99</td></tr>
+          <tr><td>Cilantro Lime Crema &ndash; 1 oz</td><td class="dots">················</td><td>$0.99</td></tr>
+          <tr><td>Chipotle Crema &ndash; 1 oz</td><td class="dots">················</td><td>$0.99</td></tr>
+          <tr><td>Guacamole &ndash; 2 oz</td><td class="dots">················</td><td>$1.59</td></tr>
+          <tr><td>Salsa &ndash; 3 oz</td><td class="dots">················</td><td>$1.99</td></tr>
+          <tr><td>Fresh Jalape&ntilde;o</td><td class="dots">················</td><td>$1.25</td></tr>
+          <tr><td>Pickled Jalape&ntilde;o</td><td class="dots">················</td><td>$1.25</td></tr>
+          <tr><td>Lettuce &ndash; 1 cup</td><td class="dots">················</td><td>$1.49</td></tr>
+          <tr><td>Bacon</td><td class="dots">················</td><td>$1.49</td></tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BULK ITEMS & MERCH -->
+  <div class="menu-category" id="bulk">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Bulk Items &amp; Merch</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <div class="list-section-wrap">
+
+      <div class="list-subsection">
+        <div class="list-subsection-title">Bulk Items</div>
+        <table class="list-table">
+          <tr><td>Terror of Hell</td><td class="dots">················</td><td>$9.99</td></tr>
+          <tr><td>Terror of Demons</td><td class="dots">················</td><td>$9.99</td></tr>
+          <tr><td>Red Salsa</td><td class="dots">················</td><td>$4.99</td></tr>
+          <tr><td>Green Salsa</td><td class="dots">················</td><td>$4.99</td></tr>
+          <tr><td>Cilantro Lime Crema</td><td class="dots">················</td><td>$5.99</td></tr>
+          <tr><td>Chipotle Crema</td><td class="dots">················</td><td>$5.99</td></tr>
+          <tr><td>Meat &ndash; 8 oz</td><td class="dots">················</td><td>$11.99</td></tr>
+          <tr><td>Rice &ndash; 24 oz</td><td class="dots">················</td><td>$9.99</td></tr>
+          <tr><td>Beans &ndash; 24 oz</td><td class="dots">················</td><td>$13.99</td></tr>
+          <tr><td>Bag of Chips</td><td class="dots">················</td><td>$7.99</td></tr>
+          <tr><td>Pimento Cheese</td><td class="dots">················</td><td>$8.99</td></tr>
+          <tr><td>Tapenade</td><td class="dots">················</td><td>$8.99</td></tr>
+        </table>
+      </div>
+
+      <div class="list-subsection">
+        <div class="list-subsection-title">Merch</div>
+        <table class="list-table">
+          <tr><td>Hats</td><td class="dots">················</td><td>$22.99</td></tr>
+          <tr><td>T-Shirts</td><td class="dots">················</td><td>$22.99</td></tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- KIDS NOTE -->
+  <div class="menu-category" id="kids" style="padding-bottom:2rem;">
+    <div class="menu-category-header">
+      <div class="menu-category-title">Kids</div>
+      <div class="menu-category-line"></div>
+    </div>
+    <div class="kids-note">
+      <div class="kids-badge">
+        <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.5 3.2c-.6.4-1 1-1.4 1.8-.5-.3-1.1-.4-1.7-.3-1.9.3-3.6 1.9-4.9 4.1C6.7 11.4 5.6 14.6 5.6 17c0 1.6 1.1 2.8 2.7 2.8 2.3 0 5-1.6 7-4.3 1.7-2.3 2.8-5 2.9-7.2.6-.5 1-1.2 1.1-2 .1-.9-.2-1.7-.8-2.3-.6-.6-1.4-.9-2.2-.8-.4 0-.6.1-.5.2zm-1.6 4c-.4 2-1.4 4.2-2.8 6-1.6 2.2-3.7 3.6-5.2 3.6-.5 0-.7-.2-.7-.8 0-1.9 1-4.7 2.5-6.9 1-1.7 2.3-2.9 3.5-3.1.9-.2 1.8.2 2.4 1z"/>
+        </svg>
+      </div>
+      <div class="kids-copy">
+        <div class="kids-eyebrow">For the Little Ones</div>
+        <p>Any child will receive a <strong>sweet treat</strong> with any item ordered on the menu!</p>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end menu-section -->
+
+<!-- ABOUT -->
+<div id="about" class="about-section">
+  <div class="about-inner">
+    <div class="about-text">
+      <div style="font-size:0.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:0.5rem;">Our Story</div>
+      <h2>Slow-Cooked. Smashed.<br><span>Unforgettable.</span></h2>
+      <p>Here&apos;s where we don&apos;t cut corners. Our pork is marinated in housemade mojo. Our chicken is all white meat, brined so it stays extra juicy. Our beef is built on a handcrafted seasoning blend. Then we slow-cook every meat and smash it on the grill, so you get the deep flavor of something slow-cooked with the crave-worthy texture of something griddled. Every sauce and salsa is made from scratch, right down to our green and red hot sauces.</p>
+      <p>That obsession runs four generations deep. Grandma sparked it with her black beans, though we've reworked that recipe so many times it's become entirely our own. The mojo pork is my mom's. The beef and the rice? Both inspired by my son. And we cook it all clean: no seed oils, ever, only avocado and olive oil. Every item on our menu is meticulously crafted to hit maximum flavor on the palate while keeping the textures that keep you coming back.</p>
+      <a href="tel:8288596473" class="btn-red" style="display:inline-block;margin-top:0.5rem;">Call to Order</a>
+    </div>
+    <div class="about-logo">
+      <img src="assets/img-01.jpg" alt="Della Street Tacos Logo" loading="lazy" decoding="async">
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="contact-section">
+  <div class="section-header" style="padding-top:0;padding-bottom:2rem">
+    <div class="section-label">Find Us</div>
+    <div class="section-title">Hours &amp; Contact</div>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-card">
+      <h3>Hours</h3>
+      <div class="hours-row"><span>Monday</span><span class="hours-closed">Closed</span></div>
+      <div class="hours-row"><span>Tuesday</span><span class="hours-open">11 AM &ndash; 7 PM</span></div>
+      <div class="hours-row"><span>Wednesday</span><span class="hours-open">11 AM &ndash; 7 PM</span></div>
+      <div class="hours-row"><span>Thursday</span><span class="hours-open">11 AM &ndash; 8 PM</span></div>
+      <div class="hours-row"><span>Friday</span><span class="hours-open">11 AM &ndash; 8 PM</span></div>
+      <div class="hours-row"><span>Saturday</span><span class="hours-open">11 AM &ndash; 8 PM</span></div>
+      <div class="hours-row"><span>Sunday</span><span class="hours-closed">Closed</span></div>
+    </div>
+    <div class="contact-card">
+      <h3>Contact</h3>
+      <div class="contact-detail"><strong>Address</strong><span>15 S. Trade Street<br>Tryon, NC 28782</span></div>
+      <div class="contact-detail"><strong>Phone</strong><span><a href="tel:8288596473">(828) 859-6473</a></span></div>
+      <div class="contact-detail"><strong>Follow Us</strong><span style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.4rem;">
+        <a href="https://www.facebook.com/profile.php?id=61579875807996" target="_blank" rel="noopener" class="social-btn social-fb" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+        <a href="https://www.instagram.com/dellastreettacos/" target="_blank" rel="noopener" class="social-btn social-ig" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.95 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg></a>
+        <a href="https://www.tiktok.com/@della.street.taco?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="social-btn social-tt" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></a>
+      </span></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <img src="assets/img-01.jpg" alt="Della Street Tacos" width="120" height="120" loading="lazy" decoding="async">
+  </div>
+  <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:0.75rem;">
+    <a href="https://www.facebook.com/profile.php?id=61579875807996" target="_blank" rel="noopener" class="social-btn social-fb" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+    <a href="https://www.instagram.com/dellastreettacos/" target="_blank" rel="noopener" class="social-btn social-ig" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.95 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg></a>
+    <a href="https://www.tiktok.com/@della.street.taco?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="social-btn social-tt" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></a>
+  </div>
+  <p>&copy; 2026 Della Street Tacos &middot; 15 S. Trade Street, Tryon, NC 28782 &middot; <a href="tel:8288596473">(828) 859-6473</a></p>
+</footer>
+
+<!-- ===== SCROLL MOTION: PARALLAX (grouped, randomized stagger) ===== -->
+<style>
+  .anim-item { will-change: opacity, transform; }
+  /* reduced-motion users get a gentle one-time fade instead of continuous motion */
+  html[data-anim="fade"] .anim-item { opacity: 0; transform: translateY(28px);
+    transition: opacity .6s cubic-bezier(.22,.61,.36,1), transform .6s cubic-bezier(.22,.61,.36,1); }
+  html[data-anim="fade"] .anim-item.in { opacity: 1; transform: none; }
+</style>
+<script>
+(function(){
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = [];
+
+  function shuffle(a){
+    for (var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function collect(){
+    items = [];
+    // Section / category headings drift slowly (deepest layer)
+    document.querySelectorAll('.section-header, .menu-category-header').forEach(function(el){
+      el.classList.add('anim-item'); items.push({ el: el, parF: 0.03, rank: 0, groupN: 1 });
+    });
+    // Grouped cards: randomize the cascade order within each group
+    function group(sel, f){
+      document.querySelectorAll(sel).forEach(function(g){
+        var kids = [].slice.call(g.children), n = kids.length;
+        var order = shuffle(kids.map(function(_, i){ return i; }));   // random rank per child
+        kids.forEach(function(c, i){
+          c.classList.add('anim-item');
+          items.push({ el: c, parF: f, rank: order[i], groupN: n });
+        });
+      });
+    }
+    group('.menu-grid', 0.06); group('.contact-inner', 0.06); group('.about-inner', 0.05);
+    document.querySelectorAll('.specials-card, .kids-note').forEach(function(el){
+      el.classList.add('anim-item'); items.push({ el: el, parF: 0.05, rank: 0, groupN: 1 });
+    });
+  }
+
+  function easeOut(t){ return 1 - Math.pow(1 - t, 3); }
+  function clamp(v,a,b){ return v < a ? a : v > b ? b : v; }
+
+  /* ---- REDUCED MOTION: one gentle fade-in, no continuous motion ---- */
+  if (reduced){
+    collect();
+    document.documentElement.setAttribute('data-anim', 'fade');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.1 });
+    items.forEach(function(it){ io.observe(it.el); });
+    return;
+  }
+
+  function frame(){
+    var vh = window.innerHeight;
+    var mobile = window.innerWidth < 600;
+    var amp  = mobile ? 16 : 26;   // drift distance — gentler on phones
+    var step = mobile ? 13 : 22;   // per-item stagger offset within a group
+    for (var i = 0; i < items.length; i++){
+      var it = items[i], r = it.el.getBoundingClientRect();
+      // Scroll-position-based delay: shifts each item's trigger point, so the
+      // stagger reads the same whether you scroll down OR up. Centered + randomized.
+      var phase = (it.rank - (it.groupN - 1) / 2) * step;
+      var top = r.top + phase, bottom = r.bottom + phase;
+      if (bottom < -160 || top > vh + 160){ it.el.style.opacity = 1; it.el.style.transform = 'none'; continue; }
+      var c = top + r.height / 2;
+      var dy = clamp((c - vh / 2) * it.parF, -amp, amp);
+      var edge = clamp(Math.min(bottom, vh - top) / (vh * 0.14), 0, 1);
+      it.el.style.transform = 'translateY(' + dy.toFixed(1) + 'px)';
+      it.el.style.opacity = (0.4 + 0.6 * easeOut(edge)).toFixed(3);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  collect();
+  document.documentElement.setAttribute('data-anim', 'parallax');
+  requestAnimationFrame(frame);
+})();
+</script>
+<script>
+(function() {
+  var canvas = document.getElementById('hero-particles');
+  if (!canvas) return;
+
+  var ctx = canvas.getContext('2d');
+  var rays = [];
+  var w, h, cx, cy, dpr, maxR;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Soft light rays radiating from a bright center: hot light-red core
+  // fading out toward the brand red. Each ray twinkles independently.
+  var RAY_COUNT = 170;
+
+  function buildRays() {
+    rays = [];
+    for (var i = 0; i < RAY_COUNT; i++) {
+      rays.push({
+        angle: Math.random() * Math.PI * 2,
+        length: 0.55 + Math.random() * 0.45, // how far this ray reaches (fraction of maxR)
+        width: 0.006 + Math.random() * 0.024, // radians, angular thickness
+        base: 0.18 + Math.random() * 0.30,    // peak brightness (brighter)
+        speed: 0.22 + Math.random() * 0.50,   // outward travel speed (faster)
+        phase: Math.random(),                  // 0..1 starting offset along its travel
+        tail: 0.45 + Math.random() * 0.45      // length of the bright streak (longer)
+      });
+    }
+  }
+
+  function resize() {
+    dpr = window.devicePixelRatio || 1;
+    var rect = canvas.getBoundingClientRect();
+    w = rect.width; h = rect.height;
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    cx = w / 2; cy = h / 2;
+    maxR = Math.sqrt(w * w + h * h) / 2 * 1.1;
+  }
+
+  function drawRay(r, t) {
+    // progress travels 0 -> 1 outward, then loops; staggered by phase so the field stays full
+    var p = (t * 0.001 * r.speed + r.phase) % 1;
+    var reach = r.length * maxR;
+    var headR = p * reach;                 // leading edge of the streak
+    var tailR = Math.max(0, headR - r.tail * reach); // trailing edge
+    // brightness rises as it leaves center, fades as it reaches the end
+    var envelope = Math.sin(p * Math.PI);  // 0 at center, peak mid-travel, 0 at edge
+    var alpha = r.base * envelope;
+    if (alpha < 0.005) return;
+    var a = r.angle, spread = r.width;
+    var hx = cx + Math.cos(a) * headR, hy = cy + Math.sin(a) * headR;
+    var x1 = cx + Math.cos(a - spread) * tailR, y1 = cy + Math.sin(a - spread) * tailR;
+    var x2 = cx + Math.cos(a + spread) * tailR, y2 = cy + Math.sin(a + spread) * tailR;
+    var grad = ctx.createLinearGradient(
+      cx + Math.cos(a) * tailR, cy + Math.sin(a) * tailR, hx, hy);
+    // bright light-red head -> brand red tail -> transparent
+    grad.addColorStop(0, 'rgba(192,57,43,0)');
+    grad.addColorStop(0.5, 'rgba(232,100,78,' + (alpha * 0.75) + ')');
+    grad.addColorStop(1, 'rgba(255,195,175,' + alpha + ')');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.moveTo(hx, hy);
+    ctx.lineTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  function drawCore(t) {
+    // bright light-red bloom at the center, gently pulsing
+    var pulse = 0.85 + 0.15 * Math.sin(t * 0.002);
+    var bloom = ctx.createRadialGradient(cx, cy, 0, cx, cy, maxR * 0.5);
+    bloom.addColorStop(0, 'rgba(255,210,200,' + (0.85 * pulse) + ')');
+    bloom.addColorStop(0.08, 'rgba(255,150,130,' + (0.55 * pulse) + ')');
+    bloom.addColorStop(0.3, 'rgba(192,57,43,0.18)');
+    bloom.addColorStop(1, 'rgba(192,57,43,0)');
+    ctx.fillStyle = bloom;
+    ctx.fillRect(0, 0, w, h);
+  }
+
+  function render(t) {
+    ctx.clearRect(0, 0, w, h);
+    ctx.globalCompositeOperation = 'lighter'; // light adds up where rays overlap
+    for (var i = 0; i < rays.length; i++) drawRay(rays[i], t);
+    drawCore(t);
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
+  function frame(t) {
+    render(t);
+    requestAnimationFrame(frame);
+  }
+
+  buildRays();
+  resize();
+  window.addEventListener('resize', resize);
+
+  if (reduced) {
+    render(0); // single static burst, no motion
+  } else {
+    requestAnimationFrame(frame);
+  }
+})();
+</script>
+
+<!-- ===== ANIMATED BACKGROUND: GRILL EMBERS ===== -->
+<style>
+  #bgfx-canvas { position: fixed; inset: 0; width: 100%; height: 100%;
+    z-index: 0; pointer-events: none; display: block; }
+  /* Let the embers show through the big sections */
+  body { background: #0a0909; }
+  .menu-section, .about-section, .contact-section { background: transparent; }
+  /* Lift real content above the canvas (nav/menu-nav keep their own z-index) */
+  .hero, .menu-section, .about-section, .contact-section, footer {
+    position: relative; z-index: 1; }
+</style>
+<canvas id="bgfx-canvas"></canvas>
+<script>
+(function () {
+  var canvas = document.getElementById('bgfx-canvas');
+  var ctx = canvas.getContext('2d');
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var SLOW = reduced ? 0.35 : 1;
+  var W = 0, H = 0, DPR = 1, last = 0, scrollY = 0, P = [];
+
+  function wrap(v, m) { return ((v % m) + m) % m; }
+
+  function init() {
+    P = [];
+    var n = Math.min(110, Math.round((W * H) / 9000));
+    for (var i = 0; i < n; i++) P.push({ x: Math.random()*W, y: Math.random()*H,
+      r: 1 + Math.random()*2.6, sp: 9 + Math.random()*26, sway: 0.4 + Math.random()*1.6,
+      ph: Math.random()*6.28, hue: Math.random()*40 });
+  }
+
+  function resize() {
+    DPR = Math.min(window.devicePixelRatio || 1, 1.5);
+    W = window.innerWidth; H = window.innerHeight;
+    canvas.width = W * DPR; canvas.height = H * DPR;
+    canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    init();
+  }
+
+  function render(dt, t) {
+    ctx.fillStyle = '#0b0807'; ctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'lighter';
+    for (var i = 0; i < P.length; i++) {
+      var p = P[i];
+      p.y -= p.sp * dt * SLOW;
+      if (p.y < -20) { p.y = H + 20; p.x = Math.random()*W; }
+      var x = p.x + Math.sin(t*0.001 + p.ph) * 14 * p.sway;
+      var y = wrap(p.y - scrollY*0.25, H + 40) - 20;
+      var a = 0.55 + 0.45 * Math.sin(t*0.002 + p.ph);
+      var g = ctx.createRadialGradient(x, y, 0, x, y, p.r*7);
+      g.addColorStop(0, 'rgba(255,' + (140+p.hue|0) + ',70,' + (0.5*a) + ')');
+      g.addColorStop(0.35, 'rgba(214,80,40,' + (0.16*a) + ')');
+      g.addColorStop(1, 'rgba(214,80,40,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, p.r*7, 0, 6.2832); ctx.fill();
+    }
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
+  function frame(ts) {
+    var dt = Math.min((ts - last) / 1000, 0.05); last = ts;
+    render(dt, ts);
+    requestAnimationFrame(frame);
+  }
+
+  window.addEventListener('scroll', function () {
+    scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+  }, { passive: true });
+  window.addEventListener('resize', resize);
+
+  resize();
+  last = performance.now();
+  requestAnimationFrame(frame);
+})();
+</script>
+
+<!-- ===== CARD / LIST FILL: fixed at 50% see-through ===== -->
+<style>
+  /* card-bg is rgb(26,26,26); fixed at 50% so the embers show through */
+  .menu-card,
+  .list-subsection,
+  .specials-card,
+  .contact-card { background: rgba(26,26,26, 0.5); }
+  /* kids-note keeps its warm gradient, just made see-through */
+  .kids-note { background: linear-gradient(135deg,
+    rgba(31,20,19, 0.5) 0%, rgba(26,26,26, 0.5) 55%); }
+</style>
+
+</body>
+</html>
